@@ -3,14 +3,14 @@
 <%@ include file= "/layout/header.jsp"%>
 
 <div>
-<form action="" method="post">
+<form action="selectProcess.jsp" method="post">
   <div class="form-group">
     <label for="userid">userid</label>
-    <input type="text" class="form-control" id="userid">
+    <input type="text" class="form-control" id="userid" name="userid">
   </div>
   <div class="form-group">
     <label for="password">Password</label>
-    <input type="password" class="form-control" id="password">
+    <input type="password" class="form-control" id="password" name="password">
   </div>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>

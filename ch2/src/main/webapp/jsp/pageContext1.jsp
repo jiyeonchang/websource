@@ -1,3 +1,7 @@
+
+<!--pageContext.jsp, pageContext.include("main.jsp")의 차이점을 알수잇다 
+include() :는불러온 페이지와같은 변수를 써도 에러는 안뜬다  -->
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>

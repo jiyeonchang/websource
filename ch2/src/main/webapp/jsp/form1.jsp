@@ -1,3 +1,6 @@
+
+
+<!-- 데이터베이스에 넘어가기 전에 화면에서 확인하기위해 jquery script를 넣는다   -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -36,6 +39,7 @@ label {
 		</div>
 		<button type="submit">전송</button>
 	</form>
+	<!-- 데이터베이스에 넘어가기 전에 화면에서 확인하기위해 jquery script를 넣는다 (소스 넣어줌)   -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script>

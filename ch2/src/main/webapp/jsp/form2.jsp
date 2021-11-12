@@ -1,3 +1,9 @@
+<!--forward의 페이지 이용방법을 알기위한 페이지
+  form2->info2->forward로이동
+forward :  a라는 페이지에서 forward로 페이지 이동하면 페이지를 이동했지만 a페이지 주소가 보임
+
+  -->
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>

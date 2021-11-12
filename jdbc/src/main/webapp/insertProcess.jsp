@@ -1,6 +1,6 @@
 <%@page import="user.domain.MemberDTO"%>
-<%@page import="user.perisstence.MemberDAO"%>
-<%@page import="user.perisstence.JdbcUtil"%>
+<%@page import="user.persistence.MemberDAO"%>
+<%@page import="user.persistence.JdbcUtil"%>
 <%@page import="java.sql.Connection"%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -22,9 +22,10 @@ Connection con = JdbcUtil.getConnection();
 
 MemberDAO dao = new MemberDAO(con);
 boolean insertFlag= dao.insert(dto);
-//db작업 결과에 따라 페이지 이동
+//db작업 결과에 따라 페이지 이동 
 if(insertFlag){
-	response.sendRedirect("index.jsp");
+	//새로운 사람 입력하면 전체 조회 로 이동 
+	response.sendRedirect("allProcess.jsp");
 	JdbcUtil.commit(con);
 }else{	//입력실패
 JdbcUtil.rollback(con);
